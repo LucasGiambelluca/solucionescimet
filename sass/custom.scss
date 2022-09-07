@@ -130,6 +130,8 @@ $warning: rgba(226, 112, 11, 0.959);
     width: 100%;
     margin: 0 auto;
     box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3);
+    background: rgba(255,255,255,.1);
+    backdrop-filter: blur(3px);
 }
 .content{
     background-color: rgba(255,255,255,.01);
@@ -143,7 +145,6 @@ $warning: rgba(226, 112, 11, 0.959);
     justify-content: center;
     flex-direction:column;
     align-items: center;
-    background-color: rgba(255,255,255,.9);
 }
 .fondo-h2{
     width: 100vw;
@@ -234,8 +235,11 @@ $warning: rgba(226, 112, 11, 0.959);
     background: linear-gradient(347deg, rgba(255,162,0,0.5690651260504201) 26%, rgba(47,48,43,0.4514180672268907) 85%);
 }
 .fondo{
-    background:linear-gradient(rgba(0,0,0,.1), rgba(255,255,255,.9)) ,url('../img/fondos/textura-fondo-2.jpg');
+    background:linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.8)) ,url('../img/fondos/vector-fondo-particulas.jpg');
+    background-size: cover;
     height: 100%;
+    object-fit: cover;
+    background-position: center center;
 }
 
 @media screen and(min-width:360px) and (max-width:568px) {
@@ -293,6 +297,10 @@ $warning: rgba(226, 112, 11, 0.959);
     /*footer*/
     .footer-text{
         text-align: center;
+    }
+    .footer-text-icons{
+        align-items: center;
+        justify-content: center;
     }
     .banner-image-contacto{
         background-position: 80%;
